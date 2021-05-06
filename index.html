@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Box | Free Projects1</title>
+    <meta name="keywords" content="search box, search box in html, search box not working, search box on taskbar, search box bootstrap, search box bootstrap 4, search box codepen, search box in html css, search box in javascript, search box in react js, search box at top of screen problem, search box using javascript,     search box css html, html css search box generator, html css search box example, html css responsive search box, search box html css codepen, search box html css bootstrap, search box html css template, html css search box design, navbar with search box html css, dropdown search box html css, simple search box html css, search box html css js, responsive search box html css, search box with icon html css, search box in html css hindi, free projects with source code and documentation, free projects download, free projects for all, free projects with source code, free projects download sites, free projects for cse, free projects for computer science students, free project 1, free projects1, free projects for computer science, free projects on github, free source code for website, free source code projects, free source code download, free source code for website design in html, free projects, free projects 1 blog, freeprojectsforall, free project download, free project, free project file, free project download with source code, free projects 1 blog, bholu, singh, Bholu Singh, bholu singh github,  who is bholu singh, bholu singh bharatpur, Bholu Singh Bikaner, bholu blogger, bholu sigh blog, freeprojects1, freeproject1, FreeProjects1.blogspot.com">
+    <meta name="description" content="It is a Search Box free project. In this project, guys you can use it as a real search box and also you can implements this logic of this project on your webpages.">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="search-conatiner">
+    	<i class="fa fa-search" onclick="changePath()"></i>
+    	<input type="text" class="search" id="search" name="search-box" onfocus="this.value=''" onkeypress="changeLocation(event)" value="Search">
+    	<i class="fa fa-times" onclick="document.getElementById('search').value = ''"></i>
+    </div>
+
+    <script src="jquery.min.js"></script>	
+    <script>
+    function changeLocation(e){
+        if(e.keyCode === 13){
+            var str = document.getElementById('search').value;
+            var str2 = str.split(' ').join('+');
+            // window.location.replace("https://freeprojects1.blogspot.com/");
+            window.location.replace("https://www.google.com/search?q="+str2);
+        }
+	}
+    function changePath(){
+        var str = document.getElementById('search').value;
+        var str2 = str.split(' ').join('+');
+        // window.location.replace("https://freeprojects1.blogspot.com/");
+        window.location.replace("https://www.google.com/search?q="+str2);
+    }
+	window.setTimeout(function(){
+	   window.location.href = "https://freeprojects1.blogspot.com";
+	}, 20000);
+</script>
+</body>
+</html>
